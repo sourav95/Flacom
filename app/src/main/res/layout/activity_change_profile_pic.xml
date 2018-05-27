@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.invinciblesourav.flacom.ChangeProfilePic">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/backbuttonChange"
+            android:paddingLeft="10dp"
+            android:background="#0000ffff"
+            android:drawableLeft="@drawable/backbutton"/>
+    </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/deletePic"
+        android:text="Delete Profile Picture"/>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="85pt"
+            android:layout_height="85pt"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/userdefault"
+            app:civ_border_color="#fff"
+            android:id="@+id/changeprofilepic"
+            app:civ_border_width="0.5pt"/>
+        <ImageButton
+            android:layout_width="26pt"
+            android:layout_height="26pt"
+            android:paddingRight="2pt"
+            android:layout_gravity="end|bottom"
+            android:src="@drawable/cameraicon"
+            android:id="@+id/changepic"
+            android:background="@drawable/circularbutton"/>
+    </FrameLayout>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="30pt" />
+
+
+    <ImageButton
+        android:id="@+id/change_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="#0000ffff"
+        android:src="@drawable/proceed1" />
+
+</LinearLayout>

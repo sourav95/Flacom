@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.invinciblesourav.flacom.DisplayFile">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/displaypage_header"
+
+        android:background="#4A005F"
+        android:padding="6pt"
+        android:layout_marginLeft="0pt"
+        android:layout_marginRight="0pt"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="3dp"
+            android:src="@drawable/backbutton"
+            android:id="@+id/backbutton"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.3"/>
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/spacer2"
+            android:layout_toRightOf="@id/backbutton"
+            />
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="3dp"
+            android:src="@drawable/inboxhdico"
+            android:id="@+id/profilepic"
+            android:layout_toRightOf="@id/spacer2"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.3"/>
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/spacer"
+            android:layout_toRightOf="@id/profilepic"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Received"
+            android:textColor="#fff"
+            android:gravity="center_vertical"
+            android:id="@+id/display_head"
+            android:layout_gravity="center_vertical"
+            android:textSize="10pt"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/spacer" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text=""
+            android:textColor="#fff"
+            android:textSize="8pt"
+
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/welcometext"
+            android:id="@+id/username" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:layout_below="@id/displaypage_header">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ABC.txt"
+            android:textSize="8pt"
+            android:id="@+id/display_filename"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="From: user129"
+            android:textSize="8pt"
+            android:id="@+id/display_filesender"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="12-09-2017 7:30 pm"
+            android:textSize="8pt"
+            android:id="@+id/display_filetime"/>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:id="@+id/display_filecontents"
+
+            android:text="I read in St. Xavier's College."/>
+    </LinearLayout>
+
+</RelativeLayout>

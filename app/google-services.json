@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "534207945556",
+    "firebase_url": "https://flacom-44762.firebaseio.com",
+    "project_id": "flacom-44762",
+    "storage_bucket": "flacom-44762.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:534207945556:android:389f5f6e31b356e4",
+        "android_client_info": {
+          "package_name": "com.example.invinciblesourav.flacom"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "534207945556-6hp88p6dmm1gs9p9d6e5f8dubjvne285.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.invinciblesourav.flacom",
+            "certificate_hash": "e88eca6490027125a63001d89dc75b8cf8c934a4"
+          }
+        },
+        {
+          "client_id": "534207945556-c426sq62r6302q83ck84968tcfe140k6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDmPkr_wWRD54tbsWM8tB73EBReOW9QpDQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "534207945556-c426sq62r6302q83ck84968tcfe140k6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

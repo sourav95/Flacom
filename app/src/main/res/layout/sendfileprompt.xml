@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Send file"
+            android:background="#3690C4"
+            android:paddingLeft="5pt"
+            android:textSize="10pt"/>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20pt"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Sender's name or mobile number"
+            android:paddingLeft="5pt"
+            android:id="@+id/receivername"
+            android:textSize="8pt"/>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20pt"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="8pt"
+            android:paddingLeft="5pt"
+            android:id="@+id/filepath"
+            android:text="Filename: ABC.txt"/>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20pt" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Send"
+                android:textAllCaps="false"
+                android:id="@+id/uploadbtn"
+                android:layout_gravity="center"/>
+            <Space
+                android:layout_width="10pt"
+                android:layout_height="wrap_content" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Close"
+                android:id="@+id/dismissBtn"
+                android:textAllCaps="false"
+                android:gravity="center"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

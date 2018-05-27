@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="8pt" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Please verify your OTP sent to you"
+        android:textAlignment="center"
+        android:id="@+id/otpdlgcaption"/>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10pt" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center">
+    <Space
+        android:layout_width="28pt"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:id="@+id/spacerleft"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Your OTP"
+        android:gravity="center_horizontal"
+        android:enabled="false"
+        android:padding="5pt"
+        android:elevation="5pt"
+        android:layout_toRightOf="@+id/spacerleft"
+        android:id="@+id/otptext"
+        android:textAlignment="center"
+        android:background="@drawable/otpback"
+        android:inputType="number"/>
+    <Space
+        android:layout_width="3pt"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/otptext"
+        android:id="@id/spacer"/>
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_toRightOf="@+id/spacer"
+        android:id="@+id/otpprogress"/>
+    </RelativeLayout>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10pt" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Verify"
+        android:textAllCaps="false"
+        android:id="@+id/otpVerify"
+        android:layout_gravity="center"/>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10pt" />
+</LinearLayout>

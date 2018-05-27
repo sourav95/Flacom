@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/mainbg"
+    tools:context="com.example.invinciblesourav.flacom.UserDetailsActivity">
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/signupback"
+        android:orientation="vertical"
+        android:padding="15pt">
+
+        <TextView
+            android:id="@+id/userdetls_caption2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Get started"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textColorHighlight="#eeee"
+            android:textSize="18pt" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="5pt" />
+
+        <TextView
+            android:id="@+id/userdetls_caption1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:lines="2"
+            android:textSize="9pt"
+            android:text="Your number has been succesfully registered!"
+            android:textAlignment="center"
+            android:textColor="#fff"
+             />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="5pt" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="9pt"
+            android:background="@drawable/whiteunderline"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:paddingBottom="5pt">
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginTop="1.9pt"
+                android:src="@drawable/usericon" />
+
+            <Space
+                android:layout_width="14dp"
+                android:layout_height="match_parent" />
+
+            <EditText
+                android:id="@+id/userdtls_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint="Give a name here"
+                android:textSize="8pt"
+                android:maxLength="15"
+                android:textAlignment="textStart"
+                android:textColorHint="#77f5f5f5"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="9pt"
+            android:background="@drawable/whiteunderline"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:paddingBottom="5pt">
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginTop="1.9pt"
+                android:src="@drawable/passwordicon" />
+
+            <Space
+                android:layout_width="14dp"
+                android:layout_height="match_parent" />
+
+            <EditText
+                android:id="@+id/userdtls_password"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:hint="Set up a password"
+                android:inputType="textPassword"
+                android:textSize="8pt"
+                android:maxLength="15"
+                android:textAlignment="textStart"
+                android:textColorHint="#77f5f5f5"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="9pt"
+            android:background="@drawable/whiteunderline"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:paddingBottom="5pt">
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginTop="1.9pt"
+                android:src="@drawable/passwordicon" />
+
+            <Space
+                android:layout_width="14dp"
+                android:layout_height="match_parent" />
+
+            <EditText
+                android:id="@+id/userdtls_confrmpswdd"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:maxLength="15"
+                android:hint="Confirm Password"
+                android:inputType="textPassword"
+                android:textSize="8pt"
+                android:textAlignment="textStart"
+                android:textColorHint="#77f5f5f5"
+                />
+        </LinearLayout>
+
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="5pt" />
+
+
+        <ImageButton
+            android:id="@+id/userdetls_proceed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="#0000ffff"
+            android:src="@drawable/proceed1" />
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"/>
+
+</LinearLayout>

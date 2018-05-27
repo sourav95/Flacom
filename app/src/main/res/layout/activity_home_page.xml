@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.invinciblesourav.flacom.HomePage">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="0pt"
+        android:id="@+id/mainpage_header"
+        android:background="#1f1f1f"
+        android:padding="3pt"
+        android:layout_alignParentTop="true"
+        >
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/userdefault"
+            android:id="@+id/profilepic"
+            android:layout_gravity="center_vertical"
+            app:civ_border_color="#fff"
+            app:civ_border_width="1pt"
+            android:layout_weight="0.3"/>
+        <Space
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/spacer"
+            android:layout_toRightOf="@id/profilepic"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome,"
+            android:textColor="#fff"
+            android:gravity="center_vertical"
+            android:id="@+id/welcometext"
+            android:layout_gravity="center_vertical"
+            android:textSize="10pt"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/spacer" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text=" user54"
+            android:textColor="#fff"
+            android:textSize="10pt"
+
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/welcometext"
+            android:id="@+id/username" />
+    </RelativeLayout>
+    <ViewFlipper
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/mainpage_flipper"
+        android:layout_below="@id/mainpage_header">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/mainpage_tabpager"
+            android:layout_below="@id/mainpage_header">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true">
+                <android.support.design.widget.TabLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/mainpage_tab"
+                    app:tabIndicatorHeight="5dp"
+                    app:tabIndicatorColor="#73FAED"
+                    android:background="#4DB6AC"/>
+
+                <android.support.v4.view.ViewPager
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:layout_below="@+id/mainpage_tab"
+                    android:id="@+id/mainpage_viewpager"/>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="24pt" />
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Change profile picture"
+                android:id="@+id/settings_cppc"
+                android:padding="10pt"
+                android:textSize="10pt"
+                android:background="@drawable/listborder"
+                />
+
+
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@drawable/profile_background">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="40pt"
+                    android:id="@+id/profile_pic"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:src="@drawable/userdefault"/>
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Username: user54"
+                    android:id="@+id/profile_name"
+                    android:textSize="10pt"
+                    android:layout_gravity="center_horizontal"/>
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="IMEI No: 34238876543"
+                    android:id="@+id/profile_imei"
+                    android:textSize="10pt"
+                    android:layout_gravity="center_horizontal"/>
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/profile_mobileno"
+                    android:textSize="10pt"
+                    android:text="Mobile No: 1234567890"
+                    android:layout_gravity="center_horizontal"/>
+
+            </LinearLayout>
+        </RelativeLayout>
+    </ViewFlipper>
+    <ImageButton
+        android:layout_width="30pt"
+        android:layout_height="30pt"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="25pt"
+        android:background="#0000ffff"
+        android:src="@drawable/sendfileicon1"
+        android:id="@+id/sendfile"
+        />
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="24pt"
+        android:orientation="horizontal"
+        android:background="@drawable/baselinebackgrnd"
+        android:id="@+id/linearLayout"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="8dp"
+            android:id="@+id/mainpage_homebtn"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="0dp"
+                android:id="@+id/mainpage_homeicon"
+                android:src="@drawable/homeunfocus"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textSize="6pt"
+                android:textAlignment="center"
+                android:id="@+id/mainpage_homebutton"
+                android:text="Home"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="8dp"
+            android:id="@+id/mainpage_settingsbtn"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="0dp"
+                android:id="@+id/mainpage_settingsicon"
+                android:src="@drawable/settingsunfocused"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textSize="6pt"
+                android:id="@+id/mainpage_settbutton"
+                android:textAlignment="center"
+                android:text="Settings"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="8dp"
+            android:id="@+id/mainpage_profilebtnbtn"
+            android:orientation="vertical"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/mainpage_profileicon"
+                android:src="@drawable/profileunfocused"
+                android:layout_height="0dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textSize="6pt"
+                android:paddingTop="2dp"
+                android:id="@+id/mainpage_profilebtn"
+                android:textAlignment="center"
+                android:text="Profile"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/mainpage_header"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:layout_width="9pt"
+            android:layout_height="9pt"
+            android:id="@+id/mainpage_notifier"
+            android:background="@drawable/circle_notif"
+            android:layout_marginLeft="26pt"
+            android:text="1"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:layout_marginTop="3pt"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="24pt"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:id="@+id/longHoldops"
+        android:visibility="gone"
+        android:background="#2e2e2e">
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"/>
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/closeIcon"
+            android:src="@drawable/closeicon"/>
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"/>
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/forwardIcon"
+            android:src="@drawable/forwardicon"/>
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"/>
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/deleteIcon"
+            android:src="@drawable/deleteicon"/>
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"/>
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/moreInfo"
+            android:src="@drawable/infoicon"/>
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"/>
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/markIcon"
+            android:src="@drawable/staricon"/>
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"/>
+    </LinearLayout>
+
+</RelativeLayout>

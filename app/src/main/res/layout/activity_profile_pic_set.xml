@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/mainbg"
+    tools:context="com.example.invinciblesourav.flacom.SignUpActivity">
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/signupback"
+        android:orientation="vertical"
+        android:padding="15pt">
+
+        <TextView
+            android:id="@+id/profilepic_caption2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Get started"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textColorHighlight="#eeee"
+            android:textSize="18pt" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="5pt" />
+
+        <TextView
+            android:id="@+id/profilepic_caption1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Upload a profile picture "
+            android:lines="2"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="10pt" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10pt" />
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="85pt"
+            android:layout_height="85pt"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/userdefault"
+            app:civ_border_color="#fff"
+            android:id="@+id/profilepic"
+            app:civ_border_width="0.5pt"/>
+         <ImageButton
+             android:layout_width="26pt"
+             android:layout_height="26pt"
+             android:paddingRight="2pt"
+             android:layout_gravity="end|bottom"
+             android:src="@drawable/cameraicon"
+             android:id="@+id/uploadpic"
+             android:background="@drawable/circularbutton"/>
+        </FrameLayout>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10pt" />
+
+
+        <ImageButton
+            android:id="@+id/final_proceed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="center_horizontal"
+            android:background="#0000ffff"
+            android:src="@drawable/proceed1" />
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"/>
+
+
+</LinearLayout>
